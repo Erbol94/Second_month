@@ -38,6 +38,7 @@ function render() {
             change(list[i].id)
         };
         changeButton.innerText = 'Change';
+
         const deleteButton = document.createElement('button');
         deleteButton.setAttribute('class', 'delete');
         deleteButton.onclick = () => {

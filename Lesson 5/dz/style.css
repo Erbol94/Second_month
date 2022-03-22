@@ -2,29 +2,36 @@ body {
     margin: 0;
     padding: 0;
 }
+.img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
 .container {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    height: 100vh;
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+    /*background-size: 400% 400%;*/
+    /*animation: gradient 15s ease infinite;*/
+    /*height: 100vh;*/
 }
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+/*@keyframes gradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*}*/
 .block {
+
     margin: 0 auto;
     border: 2px solid #242b2e;
     background: #3b3b3e;
-    width: 200px;
-    height: 300px;
+    width: 90px;
+    height: 290px;
     border-radius: 50px;
 }
 .krug {
@@ -65,4 +72,53 @@ body {
 p {
     font-size: 22px;
     font-weight: 600;
+}
+.stop {
+    display: none;
+    width: 300px;
+    height: 300px;
+}
+.stop.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -111;
+}
+.wait {
+    display: none;
+    width: 300px;
+    height: 300px;
+
+}
+.wait.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -111;
+}
+.road {
+    display: none;
+    width: 300px;
+    height: 300px;
+
+}
+.road.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -111;
+}
+.error {
+    display: none;
+    width: 300px;
+    height: 300px;
+}
+.error.active {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    z-index: -12031;
 }
