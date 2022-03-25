@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_inner input{
+    width: 60%;
+    height: 30px;
+}
+.form_inner button {
+    background-color: #00b2ff;
+    color: white;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
+.list {
+    margin-top: 50px;
+    font-size: 24px;
+}
+.actions button {
+    background-color: #00b2ff;
+    color: white;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+}
